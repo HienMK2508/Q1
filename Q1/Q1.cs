@@ -2,11 +2,12 @@
 
 namespace Q1
 {
-    internal class Program
+    internal class Q1
     {
         public class Product
         {
-            public Product() { 
+            public Product()
+            {
             }
             public Product(string name, double price, double discount)
             {
@@ -33,29 +34,26 @@ namespace Q1
             }
             public void input()
             {
-                Console.Write("enter product name: ");
+                Console.Write("Enter product name: ");
                 Name = Console.ReadLine();
 
-                Console.Write("enter product price: ");
+                Console.Write("Enter product price: ");
                 price = Convert.ToDouble(Console.ReadLine());
 
-                Console.Write("enter product discount: ");
-                discount =  Convert.ToDouble( Console.ReadLine() );
+                //Console.Write("enter product discount: ");
+                //discount = Convert.ToDouble(Console.ReadLine());
             }
 
-            public override string? ToString()
-            {
-                return base.ToString();
-            }
+
         }
 
-        static void Main(string[] args)
-        {   
+        //static void Main(string[] args)
+        //{
 
-            Product p = new Product();
-            p.input();
-            p.display();
-            
-        }
+        //    Product p = new Product();
+        //    p.input();
+        //    p.display();
+
+        //}
     }
 }
